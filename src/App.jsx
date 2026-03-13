@@ -4,47 +4,69 @@ import { Star, Sparkles, ChevronDown, ChevronUp, Instagram, Facebook, Mail, Arro
 const products = [
   {
     id: 1,
-    name: "Sakura Strawberry Cake",
-    desc: "Layered protein sponge with strawberry cream & fresh berry topping",
-    protein: "24g",
+    name: "Banana Bread",
+    desc: "Moist banana bread made with ripe bananas and a light protein boost.",
+    protein: "8g",
     cal: "210 kcal",
-    price: "₱320",
-    tag: "Best Seller",
-    gradient: "from-pink-300 to-rose-200",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+    price: "₱120",
+    tag: "Classic",
+    gradient: "from-yellow-300 to-amber-200",
+    image: "https://images.unsplash.com/photo-1569762404472-026308ba6b64?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
-    name: "Chocolate Cherry Dream",
-    desc: "Rich dark chocolate protein cake topped with a maraschino cherry",
-    protein: "28g",
-    cal: "240 kcal",
-    price: "₱350",
-    tag: "Fan Fave",
-    gradient: "from-rose-400 to-pink-300",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop",
+    name: "Biscoff Cheesecake",
+    desc: "Creamy cheesecake with rich Biscoff flavor and a smooth biscuit base.",
+    protein: "10g",
+    cal: "260 kcal",
+    price: "₱180",
+    tag: "Best Seller",
+    gradient: "from-orange-300 to-amber-200",
+    image: "https://images.unsplash.com/photo-1771220433638-173b9579d199?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
-    name: "Vanilla Blossom Petit Four",
-    desc: "Soft vanilla protein cake with white chocolate glaze & sprinkles",
-    protein: "20g",
-    cal: "190 kcal",
-    price: "₱280",
-    tag: "New",
-    gradient: "from-fuchsia-200 to-pink-200",
-    image: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop",
+    name: "Brownie Baked Oats",
+    desc: "Chocolatey baked oats that taste like brownies but packed with fiber.",
+    protein: "12g",
+    cal: "230 kcal",
+    price: "₱150",
+    tag: "Healthy",
+    gradient: "from-stone-300 to-neutral-200",
+    image: "https://www.allrecipes.com/thmb/L9gICx38E5q-DLJ-QEo1KCjotjE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/849829-61764b7dc88e4f478e1af92a7bdbf256.jpg",
   },
   {
     id: 4,
-    name: "Mochi Berry Box",
-    desc: "Assorted protein mochi in strawberry, lychee & raspberry flavors",
-    protein: "18g",
-    cal: "175 kcal",
-    price: "₱400",
-    tag: "Limited",
-    gradient: "from-pink-200 to-rose-300",
-    image: null, // No image — shows default placeholder
+    name: "Chocolate Protein Brownies",
+    desc: "Fudgy chocolate brownies loaded with protein for a guilt-free treat.",
+    protein: "15g",
+    cal: "190 kcal",
+    price: "₱160",
+    tag: "High Protein",
+    gradient: "from-amber-900 to-yellow-700",
+    image: "https://chocolatecoveredkatie.com/wp-content/uploads/2022/05/High-Protein-Brownies.jpg",
+  },
+  {
+    id: 5,
+    name: "Chocolate Protein Muffins",
+    desc: "Soft chocolate muffins with a balanced protein boost.",
+    protein: "13g",
+    cal: "200 kcal",
+    price: "₱140",
+    tag: "High Protein",
+    gradient: "from-amber-800 to-orange-600",
+    image: "https://dessertdonelight.com/wp-content/uploads/2025/01/Chocolate-Banana-Protein-Muffins-7.jpg",
+  },
+  {
+    id: 6,
+    name: "Protein Cookie / Bar",
+    desc: "Chewy protein-packed cookie bar perfect for a quick snack.",
+    protein: "14g",
+    cal: "180 kcal",
+    price: "₱130",
+    tag: "Protein Snack",
+    gradient: "from-indigo-300 to-purple-200",
+    image: "https://www.theconsciousplantkitchen.com/wp-content/uploads/2021/10/Chocolate-Chips-Peanut-butter-Protein-Bars.jpg",
   },
 ];
 
@@ -52,7 +74,6 @@ const faqs = [
   { q: "Are these actually high-protein?", a: "Yes! Every Yuki dessert packs 18–28g of protein per serving. We use whey isolate and plant-based blends — no chalky taste, promise." },
   { q: "Do they taste like 'diet food'?", a: "Absolutely not. Our recipes are crafted by a pastry chef and a sports nutritionist together. Your taste buds won't know the difference." },
   { q: "How long do they stay fresh?", a: "5 days refrigerated, 3 months frozen. We recommend enjoying them within 3 days for peak fluffiness." },
-  { q: "Do you ship nationwide?", a: "Yes! We ship across the Philippines via same-day Lalamove in Metro Manila and JRS/LBC for provincial orders." },
 ];
 
 const Petal = ({ style }) => (
@@ -149,7 +170,7 @@ export default function App() {
         </h1>
 
         <p className="max-w-xl text-lg leading-relaxed mb-10" style={{ color: "#9d174d", fontFamily: "'Georgia', serif" }}>
-          Handcrafted protein-packed cakes, petit fours & mochi — made fresh daily in Manila. Because you deserve something sweet AND strong. 🌸
+          Handcrafted protein-packed cakes, petit fours & mochi — made fresh daily in kitchen by Yuki. Because you deserve something sweet AND strong. 🌸
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center">
@@ -229,7 +250,7 @@ export default function App() {
             {[
               { icon: <Sparkles size={28} color="#ec4899" />, title: "Chef-Crafted", body: "Every recipe is developed by a professional pastry chef who knows that texture and taste can never be compromised." },
               { icon: <CheckCircle size={28} color="#ec4899" />, title: "Macro-Balanced", body: "Dietitian-approved nutritional profiles. High protein, lower sugar, real ingredients — no artificial junk." },
-              { icon: <Leaf size={28} color="#ec4899" />, title: "Made Fresh Daily", body: "Baked in small batches every morning in our Manila kitchen. What you get is as fresh as it gets." },
+              { icon: <Leaf size={28} color="#ec4899" />, title: "Made Fresh Daily", body: "Baked in small batches every morning in our kitchen. What you get is as fresh as it gets." },
             ].map(({ icon, title, body }) => (
               <div key={title} className="rounded-3xl p-8 text-center transition-all hover:-translate-y-1"
                 style={{ background: "rgba(255,255,255,0.7)", border: "1px solid rgba(249,168,212,0.4)", boxShadow: "0 4px 24px rgba(236,72,153,0.06)" }}>
@@ -303,7 +324,7 @@ export default function App() {
       {/* ── FOOTER ── */}
       <footer id="contact" className="py-10 px-6 text-center" style={{ borderTop: "1px solid rgba(249,168,212,0.3)" }}>
         <div className="text-2xl font-bold mb-2 tracking-widest" style={{ color: "#be185d", fontFamily: "'Georgia', serif" }}>YUKI</div>
-        <p className="text-sm mb-6" style={{ color: "#9d174d" }}>Protein Desserts · Made with love in Manila 🌸</p>
+        <p className="text-sm mb-6" style={{ color: "#9d174d" }}>Protein Desserts · Made with love by Yuki 🌸</p>
         <div className="flex justify-center gap-5 mb-6">
           {[{ icon: <Instagram size={18} />, label: "Instagram" }, { icon: <Facebook size={18} />, label: "Facebook" }, { icon: <Mail size={18} />, label: "Email" }].map(({ icon, label }) => (
             <button key={label} className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
